@@ -1,0 +1,152 @@
+.contentHelp{
+	max-width:1200px;
+	margin:0 auto;
+	padding-top:20px;
+	padding-bottom:50px;
+	.contentLeft{
+		width:280px;
+		float:left;
+		background-color:#fff;
+		span{
+			display:block;
+			height:60px;
+			line-height:60px;
+			font-size:16px;
+			color:#999;
+			text-align:center;
+			cursor:pointer;
+		}
+		.dShow{
+			background-color:#ff2835;
+			color:#fff;
+		}
+	}
+	.contentRight{
+		width:880px;
+		float:left;
+		margin-left:20px;
+		.dpCont{
+			.listCont{
+				background-color:#fff;
+				padding:0 30px;
+			}
+			.listBox {
+				border-bottom:1px solid #ccc;
+				
+			}
+			.leftList em {
+				float: right;
+				margin-top:37px;
+			}
+			.em1 {
+				width:10px;
+				height:10px;
+				background: url(../images/helpCenter/iconJia.png) no-repeat;
+			}
+			.emAct {
+				width:10px;
+				height:10px;
+				background: url(../images/helpCenter/iconJian.png) no-repeat;
+			}
+			.leftList {
+				height: 79px;
+				line-height: 79px;
+				font-size: 30px;
+				cursor: pointer;
+			}
+			.leftList .conTitle{
+				font-size:16px;
+				color:#666;
+				line-height: 79px;
+				display: block;
+			}
+			
+			
+			.listBox:last-child .listMenu {
+				border-bottom: none;
+			}
+			.listMenu {
+				line-height:26px;
+				display: none;
+				cursor: pointer;
+				padding:0px 0px 25px 25px;
+			}
+			.listMenu p {
+				line-height:26px;
+				font-size:14px;
+				color: #999;
+			}
+			.listMenu .p2 {
+				text-indent:28px;
+			}
+			.page {
+				text-align: center;
+				padding: 50px 0;
+			}
+			
+			.item {
+				width: 50px;
+				height: 50px;
+				line-height: 50px;
+				color: #999999;
+				font-size:14px;
+				display: inline-block;
+				margin: 0 10px;
+				cursor: pointer;
+				background:#fff;
+			}
+			.itemR {
+				color: #ff2835;
+			}
+			.item:hover {
+				color: #ff2835;
+			}
+			.item1 {
+				width: 70px;
+			}
+
+		}
+		.dpCont .listBox:last-child  {
+			border-bottom: none;
+		}
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

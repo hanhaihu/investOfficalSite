@@ -3,6 +3,24 @@
  */
 
 $fontFamily_PingFang:PingFang;
-
-
 $fontFamily_YaHei:Microsoft YaHei;
+
+/**
+ *宽度相关的基本尺本尺寸
+ */
+
+$psd_width:1920px;
+$psd_height:1080px;
+$slide_height:1080px-100px;
+
+/**
+ *百分比计算函数
+ */
+
+@function measurePercent($n, $m) {
+    @return $n / $m * 100%;
+}
+
+@function halfMeasurePercent($n, $m) {
+    @return -$n/$m/2*100%;
+}

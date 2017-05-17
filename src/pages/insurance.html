@@ -3,12 +3,97 @@
 
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="../css/commons/entry.css">
     <link rel="stylesheet" href="../css/insurance.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
 </head>
 
 <body>
+    <!--header start-->
+    <div class="headerBg">
+        <div class="header clearfix">
+            <div class="headerL">
+                <img src="../images/common/logo.png" />
+                <img src="../images/common/logo1.png" />
+            </div>
+            <ul class="headerR clearfix">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="proIntroduction.html">产品介绍</a></li>
+                <li><a href="insurance.html">安全保障</a></li>
+                <li class="on"><a href="helpCenter.html">帮助中心</a></li>
+                <li><a href="aboutUs.html">关于我们</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="column colInOne"></div>
+                <div class="promise proOne">100%完美兑付</div>
+                <ul>
+                    <li class="InDescOne"><em>平台不触碰投资人资金</em></li>
+                    <li class="InDescTwo"><em>第三方支付公司全程实行资金托管，专用系统对接 确保交易指令无误</em></li>
+                </ul>
+            </div>
+            <div class="swiper-slide">
+                <div class="column colInTwo"></div>
+                <div class="promise proTwo">透明的信息披露机制</div>
+                <ul class="InDescThree">
+                    <li><em>银行卡实名认证，资金同卡进出</em></li>
+                    <li><em>多层安全密码动态认证</em></li>
+                    <li><em>强大点饭欺诈引擎实时检测账户总环境</em></li>
+                </ul>
+                <div class="star"></div>
+                <div class="star two"></div>
+                <div class="star three"></div>
+                <div class="star four"></div>
+                <div class="starLeft"></div>
+                <div class="starLeft six"></div>
+                <div class="starLeft seven"></div>
+                <div class="starLeft eight"></div>
+            </div>
+            <div class="swiper-slide">
+                <div class="column colInThree"></div>
+                <div class="promise proThree">完善的23道风控体系</div>
+                <ul class="InDescFour">
+                    <li><em>金融资产交易所首选风控，2A+担保、履约险等强 增信手段叠加</em></li>
+                    <li><em>平台二道风控，严选资产，覆盖全部风险点</em></li>
+                    <li><em>上市公司内审体系，节点控制，全流程监督</em></li>
+                </ul>
+            </div>
+            <div class="swiper-slide">
+                <div class="column colInFour"></div>
+                <div class="promise proFour">大数据风险保护</div>
+                <ul>
+                    <li class="InDescFive"><em>128位数据加密技术，并有SSL加密传输证书确保投 资人信息和交易数据安全隐私</em></li>
+                    <li class="InDescSix"><em>多层防火墙，顶级网络安全供应商因对入侵</em></li>
+                    <li class="InDescSeven"><em>阿里金融服务器配置，多地容灾备份</em></li>
+                </ul>
+                <div class="starForLast"></div>
+                <div class="starForLast one"></div>
+                <div class="starForLast two"></div>
+                <div class="starForLast three"></div>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+    <!--zepto-->
+    <script src="../js/zepto.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="../js/swiper.jquery.min.js"></script>
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        // slidesPerView: 1,
+        paginationClickable: true,
+        direction: 'vertical'
+    });
+    </script>
 </body>
 
 </html>
