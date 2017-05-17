@@ -12,14 +12,14 @@
 				_position:"absolute",
 				bottom:"0",
 				left:"0",
-				maxHeight:"1200px",
+				maxHeight:"1180px",
 				width:"100%"
 			})
 		}else{
 			$(".footer").css({
 				position:"static",
 				_position:"static",
-				maxHeight:"1200px",
+				maxHeight:"1180px",
 				width:"100%"
 			})
 		}

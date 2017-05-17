@@ -1,20 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title></title>
     <link rel="stylesheet" href="../css/commons/entry.css">
     <link rel="stylesheet" href="../css/aboutUs.css">
-	<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
-	<script type="text/javascript" src="../js/common.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+    <!--引用百度地图API-->
+    <style type="text/css">
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .iw_poi_title {
+        color: #CC5522;
+        font-size: 14px;
+        font-weight: bold;
+        overflow: hidden;
+        padding-right: 13px;
+        white-space: nowrap
+    }
+    
+    .iw_poi_content {
+        font: 12px arial, sans-serif;
+        overflow: visible;
+        padding-top: 4px;
+        white-space: -moz-pre-wrap;
+        word-wrap: break-word
+    }
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 </head>
-<body style="background:#f6f6f6">
-	<!--header start-->
+
+<body>
+    <!--header start-->
     <div class="headerBg">
         <div class="header clearfix">
             <div class="headerL">
                 <img src="../images/common/logo.png" />
-				<img src="../images/common/logo1.png" />
+                <img src="../images/common/logo1.png" />
             </div>
             <ul class="headerR clearfix">
                 <li><a href="index.html">首页</a></li>
@@ -26,37 +54,207 @@
         </div>
     </div>
     <!--header end-->
-	<div class="contentAbout">
-		<div class="aboutBox1"><img src="../images/aboutUs/about1.jpg" /></div>
-	</div>
-	<!--footer start-->
-	<div class="footer">
-		<div class="footer_top_bg">
-			<div class="footer_top clearfix">
-				<div class="footerLeft">
-					<p style="margin:0 0 18px 0">© 2016 资本家 | All rights reserved | 江苏深南互联网金融信息服务有限公司</p>
-					<p style="margin:0 0 12px 0">苏ICP备16020043号-1 | 增值电信业务经营许可证正在申请中</p>
-					<div class="org">
-						<div class="org1"><a href='#' target='_blank'><img src='../images/common/footerIcon1.png' border='0' /></a></div>
-						<div class="org2"><a href='#' target='_blank'><img src='../images/common/footerIcon2.png' border='0' /></a></div>
-						<div class="org2"><a href='#' target='_blank'><img src='../images/common/footerIcon3.png' border='0' /></a></div>
-						<div class="org2"><a href='#' target='_blank'><img src='../images/common/footerIcon4.png' border='0' /></a></div>
-					</div>
-				</div>
-				<div class="footerCenter clearfix">
-					<dl>
-						<dt><img width="109" height="109" src="../images/common/QRCode.jpg"/></dt>
-						<dd>深南金服订阅号</dd>
-					</dl>
-				</div>
-				<div class="footerRight">
-					<p>400-888-7772</p>
-					<div>客服电话</div>
-					<div>工作时间 9:00-18:00</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--footer end-->
+    <div class="contentAbout">
+        <div class="aboutBox1"></div>
+        <div class="aboutBox2">
+            <img src="../images/aboutUs/about2.png" />
+            <div class="div1">
+                <p>资本家（www.zbenjia.com）系江苏深南互联网金融信息服务有限公司（简称“深南金服”）推出的独立品牌，是国内领先的</p>
+                <p>互联网财富管理平台，为用户提供安全舒适的一站式理财服务。</p>
+            </div>
+            <div class="div2">
+                <p>深南金服”为上市公司福建三元达通讯股份有限公司（股票代码 002417）全资子公司，注册资本2亿元人民币。公司致力于将</p>
+                <p>金融发展与信息技术创新相结合，以健全的风险管控体系为基础，为广大投资者提供专业、高效、安全的综</p>
+                <p>合性金融资产交易信息及咨询等理财服务。</p>
+            </div>
+        </div>
+        <div class="aboutBox3">
+            <div class="title">公司愿景</div>
+            <img src="../images/aboutUs/about3.jpg" />
+            <div class="div1">
+                <p>投资派作为一个安全、高效、互惠的互联网金融服务平台，由具备金融与互联网背景的专业团队管理，依托强大</p>
+                <p>资金实力的股东，与合作机构紧密合作，在健全的风险管控体系基础上，为中小企业及个人客户提供专业、</p>
+                <p>可信赖的投融资服务，实现财富增值。我们致力于用心构筑一个安全的P2P平台。</p>
+            </div>
+        </div>
+        <div class="aboutBox4">
+            <div class="title">投资派团队</div>
+            <div class="aboutBox4Con">
+                <div class="aboutBox4ConT clearfix">
+                    <div class="div1"></div>
+                    <div class="div2"></div>
+                    <div class="div3"></div>
+                    <div class="div4"></div>
+                    <div class="div5"></div>
+                </div>
+                <div class="aboutBox4ConB">
+                    <h1>陈先生  CHENxs</h1>
+                    <h2>执行总裁</h2>
+                    <p>英国杜伦大学金融专业硕士。十四年工作经验，先后担任公务员，拟上市公司董事、董事会秘书，上市公司董事长助理，民营银</p>
+                    <p>行筹建小组成员，知名互联网金融平台CEO，对互联网金融产品设计有独到经验，</p>
+                    <p>在互联网金融产品战略、运营管理方向有着深厚积累。</p>
+                </div>
+            </div>
+        </div>
+        <div class="aboutBox5">
+            <div class="title">联系我们</div>
+            <div class="aboutBox5Con clearfix">
+                <div class="list1">
+                    <dl class="clearfix">
+                        <dt>商务合作：</dt>
+                        <dd>0513-89128760</dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>地址：</dt>
+                        <dd>江苏省南通市崇川区青年路81号南通</br>大饭店财富大厦1705室</dd>
+                    </dl>
+                </div>
+                <div class="list2">
+                    <dl class="clearfix">
+                        <dt>网址：</dt>
+                        <dd>www.zbenjia.com</dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>邮编：</dt>
+                        <dd>518000</dd>
+                    </dl>
+                </div>
+                <div class="list3 ">
+                    <dl class="clearfix">
+                        <dt>客服电话：</dt>
+                        <dd>400-888-7772(长途免费)</dd>
+                    </dl>
+                    <dl class="clearfix">
+                        <dt>客服邮箱：</dt>
+                        <dd>kefu@zbenjia.com</dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="aboutBox5ConB">
+                <div id="dituContent" style="width:1180px;height:600px;"></div>
+            </div>
+        </div>
+    </div>
+    <!--footer start-->
+    <div class="footer">
+        <div class="footer_top_bg">
+            <div class="footer_top clearfix">
+                <div class="footerLeft">
+                    <p style="margin:0 0 18px 0">© 2016 资本家 | All rights reserved | 江苏深南互联网金融信息服务有限公司</p>
+                    <p style="margin:0 0 12px 0">苏ICP备16020043号-1 | 增值电信业务经营许可证正在申请中</p>
+                    <div class="org">
+                        <div class="org1">
+                            <a href='#' target='_blank'><img src='../images/common/footerIcon1.png' border='0' /></a>
+                        </div>
+                        <div class="org2">
+                            <a href='#' target='_blank'><img src='../images/common/footerIcon2.png' border='0' /></a>
+                        </div>
+                        <div class="org2">
+                            <a href='#' target='_blank'><img src='../images/common/footerIcon3.png' border='0' /></a>
+                        </div>
+                        <div class="org2">
+                            <a href='#' target='_blank'><img src='../images/common/footerIcon4.png' border='0' /></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerCenter clearfix">
+                    <dl>
+                        <dt><img width="109" height="109" src="../images/common/QRCode.jpg" /></dt>
+                        <dd>深南金服订阅号</dd>
+                    </dl>
+                </div>
+                <div class="footerRight">
+                    <p>400-888-7772</p>
+                    <div>客服电话</div>
+                    <div>工作时间 9:00-18:00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer end-->
+    <script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap() {
+        createMap(); //创建地图
+        setMapEvent(); //设置地图事件
+        addMapControl(); //向地图添加控件
+        addMapOverlay(); //向地图添加覆盖物
+    }
+
+    //创建地图函数：
+    function createMap() {
+        map = new BMap.Map("dituContent");
+        map.centerAndZoom(new BMap.Point(120.88941, 32.013228), 17);
+    }
+
+    function setMapEvent() {
+        map.enableScrollWheelZoom();
+        map.enableKeyboard();
+        map.enableDragging();
+        map.enableDoubleClickZoom()
+    }
+
+    function addClickHandler(target, window) {
+        target.addEventListener("click", function() {
+            target.openInfoWindow(window);
+        });
+    }
+
+    function addMapOverlay() {
+        var markers = [{
+            content: "江苏省南通市崇川区青年路81号南通大饭店财富大厦1705室",
+            title: "公司地址",
+            imageOffset: {
+                width: 0,
+                height: 3
+            },
+            position: {
+                lat: 32.012539,
+                lng: 120.88844
+            }
+        }];
+        for (var index = 0; index < markers.length; index++) {
+            var point = new BMap.Point(markers[index].position.lng, markers[index].position.lat);
+            var marker = new BMap.Marker(point, {
+                icon: new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png", new BMap.Size(20, 25), {
+                    imageOffset: new BMap.Size(markers[index].imageOffset.width, markers[index].imageOffset.height)
+                })
+            });
+            var label = new BMap.Label(markers[index].title, {
+                offset: new BMap.Size(25, 5)
+            });
+            var opts = {
+                width: 200,
+                title: markers[index].title,
+                enableMessage: false
+            };
+            var infoWindow = new BMap.InfoWindow(markers[index].content, opts);
+            marker.setLabel(label);
+            addClickHandler(marker, infoWindow);
+            map.addOverlay(marker);
+        };
+    }
+    //向地图添加控件
+    function addMapControl() {
+        var scaleControl = new BMap.ScaleControl({
+            anchor: BMAP_ANCHOR_BOTTOM_LEFT
+        });
+        scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+        map.addControl(scaleControl);
+        var navControl = new BMap.NavigationControl({
+            anchor: BMAP_ANCHOR_TOP_LEFT,
+            type: BMAP_NAVIGATION_CONTROL_LARGE
+        });
+        map.addControl(navControl);
+        var overviewControl = new BMap.OverviewMapControl({
+            anchor: BMAP_ANCHOR_BOTTOM_RIGHT,
+            isOpen: true
+        });
+        map.addControl(overviewControl);
+    }
+    var map;
+    initMap();
+    </script>
 </body>
+
 </html>
