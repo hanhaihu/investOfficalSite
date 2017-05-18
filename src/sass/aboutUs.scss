@@ -1,177 +1,163 @@
-.contentAbout{
-	.aboutBox1{
-		width: 100%;
-		height: 390px;
-		background: url(../../images/aboutUs/about1.jpg) no-repeat center;
-		background-size: cover;
-	}
-	.aboutBox2{
-		img{margin:150px 0 95px 0;}
-		text-align:center;
-		p{
-			font-size:14px;
-			color:#333;
-			line-height:25px;
-		}
-		.div1{
-			margin-bottom:25px;
-		}
-	}
-	.title{
-		font-size:32px;
-		line-height:32px;
-		color:#333;
-		margin:138px 0 120px 0;
-		text-align:center;
-	}
-	.aboutBox3{
-		text-align:center;
-		p{
-			font-size:16px;
-			color:#333;
-			line-height:30px;
-		}
-		.div1{
-			margin-top:95px;
-		}
-	}
-	.aboutBox4{
-		.aboutBox4Con{width:940px;margin:0 auto;}
-		.aboutBox4ConT{
-			.div1,.div2,.div3,.div4,.div5{float:left;margin-left:20px;}
-			.div1,.div5{position:relative;top:40px;}
-			.div2,.div4{position:relative;top:20px;}
-			.div1{
-				width:140px;
-				height:140px;
-				border-radius: 50%;
-				background:#f00;
-				
-			}
-			.div2{
-				width:180px;
-				height:180px;
-				border-radius: 50%;
-				background:#f0f;
-				
-			}
-			.div3{
-				width:220px;
-				height:220px;
-				border-radius: 50%;
-				background:#ff0;
-				
-			}
-			.div4{
-				width:180px;
-				height:180px;
-				border-radius: 50%;
-				background:#0ff;
-				
-			}
-			.div5{
-				width:140px;
-				height:140px;
-				border-radius: 50%;
-				background:#ccc;
-				
-			}
-		}
-		.aboutBox4ConT div:first-child{
-			margin:0px;
-		}
-		.aboutBox4ConB{
-			margin-top:45px;
-			text-align:center;
-			h1{
-				font-size:20px;
-				line-height:20px;
-				color:#333;
-			}
-			h2{
-				font-size:20px;
-				line-height:20px;
-				color:#ff2835;
-				margin:15px 0 35px 0;
-			}
-			p{
-				font-size:14px;
-				line-height:30px;
-				color:#999;
-			}
-		}
-	}
-	.aboutBox5{
-		.aboutBox5Con{
-			width:1180px;
-			margin:0 auto;
-			.list1,.list2,.list3{
-				float:left;
-				dl:first-child{
-					margin-bottom:30px;
-				}
-				dl dt{
-					float:left;
-					font-size:16px;
-					color:#333;
-				}
-				dl dd{
-					float:left;
-					font-size:16.5px;
-					color:#999;
-				}
-			}
-			.list1{
-				width:457px;
-				margin-left:25px;
-			}
-			.list2{
-				width:386px;
-			}
-			.list3{
-				width:297px;
-			}
-		}
-		.aboutBox5ConB{
-			width:1180px;
-			height:600px;
-			margin:50px auto 150px auto;
-		}
-	}
+.contentAbout {
+    .aboutBox1 {
+        width: 100%;
+        height: 390px;
+        background: url(../../images/aboutUs/about1.jpg) no-repeat center;
+        background-size: cover;
+    }
+    .aboutBox2 {
+        img {
+            margin: 150px 0 95px 0;
+        }
+        text-align:center;
+        p {
+            font-size: 14px;
+            color: #333;
+            line-height: 25px;
+        }
+        .div1 {
+            margin-bottom: 25px;
+        }
+    }
+    .title {
+        font-size: 32px;
+        line-height: 32px;
+        color: #333;
+        margin: 138px 0 120px 0;
+        text-align: center;
+    }
+    .aboutBox3 {
+        text-align: center;
+        p {
+            font-size: 16px;
+            color: #333;
+            line-height: 30px;
+        }
+        .div1 {
+            margin-top: 95px;
+        }
+    }
+    .aboutBox4 {
+        .aboutBox4Con {
+            width: 940px;
+            margin: 0 auto;
+        }
+        .aboutBox4ConT {
+            .div1,
+            .div2,
+            .div3,
+            .div4,
+            .div5 {
+                float: left;
+                margin-left: 20px;
+            }
+            .div1,
+            .div5 {
+                position: relative;
+                top: 40px;
+            }
+            .div2,
+            .div4 {
+                position: relative;
+                top: 20px;
+            }
+            .div1 {
+                width: 140px;
+                height: 140px;
+                border-radius: 50%;
+                background: url("../images/aboutUs/CEO1.png") no-repeat;
+                background-size: 100% 100%;
+            }
+            .div2 {
+                width: 180px;
+                height: 180px;
+                border-radius: 50%;
+                background: url("../images/aboutUs/CEO2.png") no-repeat;
+                background-size: 100% 100%;
+            }
+            .div3 {
+                width: 220px;
+                height: 220px;
+                border-radius: 50%;
+                background: url("../images/aboutUs/CEO3.png") no-repeat;
+                background-size: 100% 100%;
+            }
+            .div4 {
+                width: 180px;
+                height: 180px;
+                border-radius: 50%;
+                background: url("../images/aboutUs/CEO4.png") no-repeat;
+                background-size: 100% 100%;
+            }
+            .div5 {
+                width: 140px;
+                height: 140px;
+                border-radius: 50%;
+                background: url("../images/aboutUs/CEO5.png") no-repeat;
+                background-size: 100% 100%;
+            }
+        }
+        .aboutBox4ConT div:first-child {
+            margin: 0px;
+        }
+        .aboutBox4ConB {
+            margin-top: 45px;
+            text-align: center;
+            h1 {
+                font-size: 20px;
+                line-height: 20px;
+                color: #333;
+            }
+            h2 {
+                font-size: 20px;
+                line-height: 20px;
+                color: #ff2835;
+                margin: 15px 0 35px 0;
+            }
+            p {
+                font-size: 14px;
+                line-height: 30px;
+                color: #999;
+            }
+        }
+    }
+    .aboutBox5 {
+        .aboutBox5Con {
+            width: 1180px;
+            margin: 0 auto;
+            .list1,
+            .list2,
+            .list3 {
+                float: left;
+                dl:first-child {
+                    margin-bottom: 30px;
+                }
+                dl dt {
+                    float: left;
+                    font-size: 16px;
+                    color: #333;
+                }
+                dl dd {
+                    float: left;
+                    font-size: 16.5px;
+                    color: #999;
+                }
+            }
+            .list1 {
+                width: 457px;
+                margin-left: 25px;
+            }
+            .list2 {
+                width: 386px;
+            }
+            .list3 {
+                width: 297px;
+            }
+        }
+        .aboutBox5ConB {
+            width: 1180px;
+            height: 600px;
+            margin: 50px auto 150px auto;
+        }
+    }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

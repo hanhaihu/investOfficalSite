@@ -80,17 +80,45 @@
         <div class="aboutBox4">
             <div class="title">投资派团队</div>
             <div class="aboutBox4Con">
-                <div class="aboutBox4ConT clearfix">
+                <div class="aboutBox4ConT clearfix investTeam">
                     <div class="div1"></div>
                     <div class="div2"></div>
-                    <div class="div3"></div>
+                    <div class="div3" id="center"></div>
                     <div class="div4"></div>
                     <div class="div5"></div>
                 </div>
-                <div class="aboutBox4ConB">
-                    <h1>陈先生  CHENxs</h1>
+                <div class="aboutBox4ConB" style="display: none;">
+                    <h1>韩先生  CHENxs</h1>
                     <h2>执行总裁</h2>
                     <p>英国杜伦大学金融专业硕士。十四年工作经验，先后担任公务员，拟上市公司董事、董事会秘书，上市公司董事长助理，民营银</p>
+                    <p>行筹建小组成员，知名互联网金融平台CEO，对互联网金融产品设计有独到经验，</p>
+                    <p>在互联网金融产品战略、运营管理方向有着深厚积累。</p>
+                </div>
+                <div class="aboutBox4ConB" style="display: none;">
+                    <h1>李先生  CHENxs</h1>
+                    <h2>执行总裁</h2>
+                    <p>法国杜伦大学金融专业硕士。十四年工作经验，先后担任公务员，拟上市公司董事、董事会秘书，上市公司董事长助理，民营银</p>
+                    <p>行筹建小组成员，知名互联网金融平台CEO，对互联网金融产品设计有独到经验，</p>
+                    <p>在互联网金融产品战略、运营管理方向有着深厚积累。</p>
+                </div>
+                <div class="aboutBox4ConB">
+                    <h1>周先生  CHENxs</h1>
+                    <h2>执行总裁</h2>
+                    <p>美国杜伦大学金融专业硕士。十四年工作经验，先后担任公务员，拟上市公司董事、董事会秘书，上市公司董事长助理，民营银</p>
+                    <p>行筹建小组成员，知名互联网金融平台CEO，对互联网金融产品设计有独到经验，</p>
+                    <p>在互联网金融产品战略、运营管理方向有着深厚积累。</p>
+                </div>
+                <div class="aboutBox4ConB" style="display: none;">
+                    <h1>冯先生  CHENxs</h1>
+                    <h2>执行总裁</h2>
+                    <p>俄国杜伦大学金融专业硕士。十四年工作经验，先后担任公务员，拟上市公司董事、董事会秘书，上市公司董事长助理，民营银</p>
+                    <p>行筹建小组成员，知名互联网金融平台CEO，对互联网金融产品设计有独到经验，</p>
+                    <p>在互联网金融产品战略、运营管理方向有着深厚积累。</p>
+                </div>
+                <div class="aboutBox4ConB" style="display: none;">
+                    <h1>区先生  CHENxs</h1>
+                    <h2>执行总裁</h2>
+                    <p>中国杜伦大学金融专业硕士。十四年工作经验，先后担任公务员，拟上市公司董事、董事会秘书，上市公司董事长助理，民营银</p>
                     <p>行筹建小组成员，知名互联网金融平台CEO，对互联网金融产品设计有独到经验，</p>
                     <p>在互联网金融产品战略、运营管理方向有着深厚积累。</p>
                 </div>
@@ -254,6 +282,30 @@
     }
     var map;
     initMap();
+
+
+    //投资团队切换事件
+
+    $(".investTeam div").click(function(event) {
+
+        //保存下中间的图片的链接
+        var storageUrl = $("#center").css("background-image");
+
+        //保存下当前点击的图片的链接
+
+        var urlCenter = $(this).css("background-image");
+
+        //中间的图片和当前点击图片交换链接;
+        $("#center").css("background-image", urlCenter);
+
+        $(this).css("background-image", storageUrl);
+
+        var index = Number(urlCenter.substr(-7, 1)) - 1;
+
+        //切换团队介绍文字
+        $(".aboutBox4ConB:eq(" + index + ")").css("display", "block").siblings(".aboutBox4ConB").css("display", "none");
+
+    });
     </script>
 </body>
 
